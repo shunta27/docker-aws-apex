@@ -1,0 +1,7 @@
+node:
+  container_name: "nodeapp"
+  build: alpine-node
+  tty: true
+  volumes:
+    - ./workspace:/usr/share/workspace
+    - $HOME/.aws:/root/.aws
